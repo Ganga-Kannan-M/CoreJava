@@ -1,0 +1,626 @@
+Program using if
+
+
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+      //  int i=20;
+       // i++;
+      //   System.out.println(i);
+     // System.out.println(i++);
+     //    here it will be 21.
+     Scanner sc=new Scanner(System.in);
+     int a = sc.nextInt();
+     int b = sc.nextInt();
+     if(a>6||b>6)
+     {
+         System.out.println("Invalid");
+         System.exit(0);
+     }
+
+EXAMPLE EXTRACT DIGIT
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+import java.util.regex.Pattern;  
+import java.util.Scanner;  
+import java.util.regex.Matcher;    
+
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	String str = sc.nextLine();
+	Pattern p = Pattern.compile("\\d+");
+	Matcher m=p.matcher(str);
+	while (m.find())
+	{
+	    System.out.println(m.group());
+	}
+	
+	
+	
+	
+	}
+}
+
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+import java.util.regex.Pattern;  
+import java.util.Scanner;  
+import java.util.regex.Matcher;    
+
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	String str = sc.nextLine();
+	System.out.println(Pattern.matches("E\\d{3}",str));
+	  
+	
+	
+	}
+}
+EXAMPLE email checking
+
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+import java.util.regex.Pattern;  
+import java.util.Scanner;  
+import java.util.regex.Matcher;    
+
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	String str = sc.nextLine();
+	System.out.println(Pattern.matches("^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$",str));
+	  
+	
+	
+	}
+}
+
+     
+
+PROGRAM ASCII VALUE
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+     char c = sc.next().charAt(0);
+     int ascii = c;
+     ascii+=5;
+    
+     char ans = (char)ascii;
+     System.out.println(ans);
+	}
+}
+
+EG ABSOLUTE DIFFERENCE
+
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+     int a = sc.nextInt();
+     int b = sc.nextInt();
+     if(a>6||b>6)
+     {
+         System.out.println("Invalid");
+         System.exit(0);
+     }
+     int sum = a+b;
+     if(sum > 8)
+     {
+         // int res = (8 - sum);
+         int value = Math.abs(8 - sum);
+         System.out.println(value*2);
+         
+     }
+     else{
+         int res = (8 - sum);
+         System.out.println(res);
+     }
+     
+	}
+}
+
+EG VOWEL
+
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+     char c=sc.next().charAt(0);
+     
+     switch(c)
+     {
+        case 'A' :
+        case 'E' :
+        case 'I' :
+        case 'O' :
+        case 'U' :
+        case 'a' :
+        case 'e' :
+        case 'i' :
+        case 'o':
+        case 'u' :
+             System.out.println("Vowel");
+                break;
+        default :
+                System.out.println(" Not Vowel");
+     }
+     
+	}
+}
+
+EG while loop
+
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	 int start = sc.nextInt();
+	 int end = sc.nextInt();
+	 if(start>end)
+	 {
+	     System.out.println("Invalid");
+	     System.exit(0);
+	 }
+	 while(start < end)
+	 {
+	     start++;
+	     if(start%2==0)
+	     {
+	         System.out.println(start);
+	     }
+	     
+	 }
+     
+     
+	}
+}
+
+     
+     
+     if(a==b)
+     {
+         int ans,doub;
+         ans=a+b;
+         doub=ans*2;
+         System.out.println(doub);
+   
+         
+     }
+     else
+     {
+         int ans;
+         ans=a+b;
+         System.out.println(ans);
+     }
+     
+     
+     
+    }
+}
+
+EG ARRAY PRODUCT
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	int prod=1;
+	int n = sc.nextInt();
+	int arr[]=new int[n];
+	for(int i=0;i<arr.length;i++)
+	{
+	    arr[i]=sc.nextInt();
+	}
+	for(int i=0;i<arr.length;i++)
+	{
+	    if(arr[i]>=10 && arr[i]<=99)
+	    {
+	         prod=prod*arr[i];
+	    }
+	}
+	
+	System.out.println(prod);
+	
+	 
+	}
+}
+
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	int sum=0;
+	int n = sc.nextInt();
+	int arr[]=new int[n];
+	for(int i=0;i<arr.length;i++)
+	{
+	    arr[i]=sc.nextInt();
+	}
+	for(int i=0;i<arr.length;i++)
+	{
+	    if(arr[i]%2==0)
+	    {
+	         sum=sum+arr[i];
+	    }
+	}
+	
+	System.out.println(sum);
+	
+	 
+	}
+}
+
+EG MAXIMUM PRODUCT
+
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	int n = sc.nextInt();
+	int arr[]=new int[n];
+	for(int i=0;i<arr.length;i++)
+	{
+	    arr[i]=sc.nextInt();
+	}
+	
+	int max=arr[0];
+	for(int i=0;i<arr.length;i++)
+	{
+	   if(arr[i]>max)
+	   {
+	       max=arr[i];
+	   }
+	}
+	
+	
+	for(int i=0;i<arr.length;i++)
+	{
+	    for( int j=i+1;j<arr.length;j++)
+	    {
+	        if(arr[i]*arr[j]==max)
+	        {
+	            System.out.println(max);
+			System.exit(0);
+	        }
+	        
+	    }
+	}
+	
+	System.out.println("-1");
+	
+	
+
+	}
+}
+
+EXAMPLE EVEN SERIES
+
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+	int n = sc.nextInt();
+	int count=0;
+	int maxIndex=-1;
+	int startIndex=-1;
+	int arr[]=new int[n];
+	for(int i=0;i<arr.length;i++)
+	{
+	    arr[i]=sc.nextInt();
+	}
+	int max=0;
+	for(int i=0;i<arr.length;i++)
+	{
+	    if(arr[i]%2==0)
+	    {
+	        count++;
+	        if(count==1)
+	            startIndex=i;
+	       
+	        if(count>max)
+	            max=count;
+	            maxIndex=startIndex;
+
+	    }
+	    else
+	        count=0;
+	}
+	System.out.println(max);
+	System.out.println(maxIndex);
+	
+	
+	
+	
+	}
+}
+
+EG ANAGRAM
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+import java.util.Scanner;
+import java.util.Arrays;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	String str1 = sc.nextLine();
+	String str2 = sc.nextLine();
+    String upper1=str1.toLowerCase();
+	String upper2=str2.toLowerCase();
+	if(upper1.length() == upper2.length())
+	{
+	   
+	
+	
+	char char1[]=upper1.toCharArray();
+	char char2[]=upper2.toCharArray();
+	
+	Arrays.sort(char1);
+	Arrays.sort(char2);
+	
+	if(Arrays.equals(char1,char2))
+	{
+	    System.out.println(" Anagram");
+	}
+	
+	}
+	else
+	{
+	    System.out.println(" Not Anagram");
+	}
+	}
+}
+
+EG STRING
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+	    String name = sc.nextLine();
+	    
+	    String str[]=name.split(" ");
+	    System.out.println(Arrays.toString(str));
+	    
+	    String res=" ";
+	    for(int i=0; i<str.length-1;i++)
+	    {
+	        res+=str[i].charAt(0);
+	         res+=".";
+	    }
+	    res+=str[str.length-1];
+	    System.out.println(res);
+	    
+	
+	
+	
+	
+	
+	
+	
+	}
+}
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+import java.util.regex.Pattern;  
+import java.util.Scanner;  
+import java.util.regex.Matcher;    
+
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	String str = sc.nextLine();
+	
+	System.out.println(Pattern.matches("((http://)|(https://)){1}(www[.])?([A-Za-z]+)[.]{1}[A-Za-z]{2,6}[.]{1}([A-Za-z]{2,6}?)",str));
+	  
+	
+	
+	}
+}
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+import java.util.regex.Pattern;  
+import java.util.Scanner;  
+import java.util.regex.Matcher;    
+
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	int start = sc.nextInt();
+	int end = sc.nextInt();
+	
+	for(int i=start+1;i<=end;i++)
+	{
+	   boolean prime=true;
+	    for(int j=2;j<=i/2;j++)
+	    {
+	        if(i%j==0)
+	        {
+	            prime=false;
+	            break;
+	        }
+	    }
+	    if(prime==true)
+	{
+	    System.out.print(i+","");
+	}
+	    
+	}
+	
+	
+	    
+	}
+}
+
+EXAMPLE 
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+import java.util.regex.Pattern;  
+import java.util.Scanner;  
+import java.util.regex.Matcher;    
+
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	int sum=0;
+	
+	int input = sc.nextInt();
+	for(int i=0;i<input;i++)
+	{
+	    sum+=i;
+	    if(sum >= input)
+	    {
+	        System.out.println(i-1);
+	        System.exit(0);
+	    }
+	}
+	
+	
+	
+	    
+	}
+}
+
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+import java.util.regex.Pattern;  
+import java.util.Scanner;  
+import java.util.regex.Matcher;    
+
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+
+	
+	
+	for(int i=1;i<=5;i++)
+	{
+	   for(int j=1;j<=i;j++)
+	   {
+	       System.out.print("*");
+	   }
+	    System.out.println();
+	}
+	
+	
+	
+	    
+	}
+}

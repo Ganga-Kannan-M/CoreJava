@@ -1,0 +1,135 @@
+Program using if
+
+
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+      //  int i=20;
+       // i++;
+      //   System.out.println(i);
+     // System.out.println(i++);
+     //    here it will be 21.
+     Scanner sc=new Scanner(System.in);
+     int a = sc.nextInt();
+     int b = sc.nextInt();
+     if(a>6||b>6)
+     {
+         System.out.println("Invalid");
+         System.exit(0);
+     }
+     
+
+PROGRAM ASCII VALUE
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+     char c = sc.next().charAt(0);
+     int ascii = c;
+     ascii+=5;
+    
+     char ans = (char)ascii;
+     System.out.println(ans);
+	}
+}
+
+EG ABSOLUTE DIFFERENCE
+
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+     int a = sc.nextInt();
+     int b = sc.nextInt();
+     if(a>6||b>6)
+     {
+         System.out.println("Invalid");
+         System.exit(0);
+     }
+     int sum = a+b;
+     if(sum > 8)
+     {
+         // int res = (8 - sum);
+         int value = Math.abs(8 - sum);
+         System.out.println(value*2);
+         
+     }
+     else{
+         int res = (8 - sum);
+         System.out.println(res);
+     }
+     
+	}
+}
+
+EG VOWEL
+
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+     char c=sc.next().charAt(0);
+     
+     switch(c)
+     {
+        case 'A' :
+        case 'E' :
+        case 'I' :
+        case 'O' :
+        case 'U' :
+        case 'a' :
+        case 'e' :
+        case 'i' :
+        case 'o':
+        case 'u' :
+             System.out.println("Vowel");
+                break;
+        default :
+                System.out.println(" Not Vowel");
+     }
+     
+	}
+}
+
+     
+     
+     if(a==b)
+     {
+         int ans,doub;
+         ans=a+b;
+         doub=ans*2;
+         System.out.println(doub);
+   
+         
+     }
+     else
+     {
+         int ans;
+         ans=a+b;
+         System.out.println(ans);
+     }
+     
+     
+     
+    }
+}
